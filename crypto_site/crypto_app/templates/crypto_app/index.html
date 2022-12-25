@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Crypto prices</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="loader">
+        </div>
+      </div>
+    </div>
+        <nav>
+            <img src="{% static 'images/cryptocurrency.png' %}" class="logo">
+            <ul>
+                <li><a href="#">Market</a> </li>
+                <li><a href="#">Features</a> </li>
+                <li><a href="#">White papers</a> </li>
+                <li><a href="#">About Us</a> </li>
+            </ul>
+            <a href="#" class="btn">EN</a>
+        </nav>
+        <div class="content">
+            <h1>SEE ALL <br>CRYPTO <span>Prices</span></h1>
+            <p>World's biggest Cryptocurrency prices available on web <br>as well as mobile phones.</p>
+            <a href="#" class="btn">EXPLORE MORE</a>
+        </div>
+        <div class="coin-list">
+            <div class="coin">
+               <img src="{% static 'images/bitcoin.png' %}">
+               <div>
+                   <h3>$<span id="bitcoin"></span></h3>
+                   <p>Bitcoin</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/ethereum.png' %}">
+               <div>
+                   <h3>$<span id="ethereum"></span></h3>
+                   <p>Ethereum</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/dogecoin.png' %}">
+               <div>
+                   <h3>$<span id="dogecoin"></span></h3>
+                   <p>Dogecoin</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/litecoin.png' %}">
+               <div>
+                   <h3>$<span id="litecoin"></span></h3>
+                   <p>Litecoin</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/binance.png' %}">
+               <div>
+                   <h3>$<span id="binancecoin"></span></h3>
+                   <p>Binance coin</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/cardano.png' %}">
+               <div>
+                   <h3>$<span id="cardano"></span></h3>
+                   <p>Cardano</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/xrp.png' %}">
+               <div>
+                   <h3>$<span id="ripple"></span></h3>
+                   <p>XRP</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/dot.png' %}">
+               <div>
+                   <h3>$<span id="polkadot"></span></h3>
+                   <p>Polkadot</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/uniswap.png' %}">
+               <div>
+                   <h3>$<span id="uniswap"></span></h3>
+                   <p>Uniswap</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/bitcoinn.png' %}">
+               <div>
+                   <h3>$<span id="bitcoin-cash"></span></h3>
+                   <p>Bitcoin Cash</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/solana.png' %}">
+               <div>
+                   <h3>$<span id="solana"></span></h3>
+                   <p>Solana</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/chainlink.png' %}">
+               <div>
+                   <h3>$<span id="chainlink"></span></h3>
+                   <p>Chainlink</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/polygon.png' %}">
+               <div>
+                   <h3>$<span id="matic-network"></span></h3>
+                   <p>Polygon</p>
+               </div>
+            </div>
+             <div class="coin">
+               <img src="{% static 'images/theta.png' %}">
+               <div>
+                   <h3>$<span id="theta-token"></span></h3>
+                   <p>Theta</p>
+               </div>
+            </div>
+             <div class="coin">
+               <img src="{% static 'images/shiba.png' %}">
+               <div>
+                   <h3>$<span id="shiba-inu"></span></h3>
+                   <p>Shiba Inu</p>
+               </div>
+            </div>
+             <div class="coin">
+               <img src="{% static 'images/vechain.png' %}">
+               <div>
+                   <h3>$<span id="vechain"></span></h3>
+                   <p>Vechain</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/stellar.png' %}">
+               <div>
+                   <h3>$<span id="stellar"></span></h3>
+                   <p>Stellar</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/filecoin.png' %}">
+               <div>
+                   <h3>$<span id="filecoin"></span></h3>
+                   <p>Filecoin</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/aave.png' %}">
+               <div>
+                   <h3>$<span id="aave"></span></h3>
+                   <p>Aave</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/monero.png' %}">
+               <div>
+                   <h3>$<span id="monero"></span></h3>
+                   <p>Monero</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/tron.png' %}">
+               <div>
+                   <h3>$<span id="tron"></span></h3>
+                   <p>Tron</p>
+               </div>
+            </div>
+            <div class="coin">
+               <img src="{% static 'images/cronos.png' %}">
+               <div>
+                   <h3>$<span id="cronos"></span></h3>
+                   <p>Cronos</p>
+               </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Crpto Prices</h1>
+      <img src="{% static 'images/cryptocurrency.png' %}" class="logoo">
+
+    <h2>Contact</h2>
+
+    <address>
+      52 Victory Avenue Ojodu, Ikeja Lagos, Nigeria<br>
+
+      <a class="footer__btn" href="mailto:allformslimited@gmail.com">Email Us</a>
+    </address>
+  </div>
+
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Crypto News</a>
+        </li>
+
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Technology</h2>
+
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Developers API</a>
+        </li>
+
+        <li>
+          <a href="#">Onboarding New Crypto Coins</a>
+        </li>
+
+        <li>
+          <a href="#">Digital Signage</a>
+        </li>
+
+        <li>
+          <a href="#">Automation</a>
+        </li>
+
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="legal">
+    <p>&copy; 2022 Allforms Limited. All rights reserved.</p>
+
+    <div class="legal__links">
+      <span></span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
